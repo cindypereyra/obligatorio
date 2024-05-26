@@ -32,8 +32,8 @@ html(lang='en')
                         .text-center.mb-5
                             .feature.bg-primary.bg-gradient.text-white.rounded-3.mb-3
                                 i.bi.bi-envelope
-                            h1.fw-bolder Get in touch
-                            p.lead.fw-normal.text-muted.mb-0 We'd love to hear from you
+                            h1.fw-bolder Contáctate con nosotros
+                            p.lead.fw-normal.text-muted.mb-0 *****
                         .row.gx-5.justify-content-center
                             .col-lg-8.col-xl-6
 
@@ -55,9 +55,9 @@ html(lang='en')
                                             placeholder='Enter your name...'
                                             data-sb-validations='required'
                                         )
-                                        label(for='name') Full name
+                                        label(for='name') Nombre y Apellido
                                         .invalid-feedback(data-sb-feedback='name:required')
-                                            | A name is required.
+                                            | El nombre es obligatorio
                                     
                                     // Email address input
                                     .form-floating.mb-3
@@ -66,11 +66,9 @@ html(lang='en')
                                             placeholder='name@example.com'
                                             data-sb-validations='required,email'
                                         )
-                                        label(for='email') Email address
+                                        label(for='email') Correo electrónico
                                         .invalid-feedback(data-sb-feedback='email:required')
-                                            | An email is required.
-                                        .invalid-feedback(data-sb-feedback='email:email')
-                                            | Email is not valid.
+                                            | El mail es obligatorio
                                     
                                     // Phone number input
                                     .form-floating.mb-3
@@ -79,9 +77,9 @@ html(lang='en')
                                             placeholder='(123) 456-7890'
                                             data-sb-validations='required'
                                         )
-                                        label(for='phone') Phone number
+                                        label(for='phone') Número de teléfono
                                         .invalid-feedback(data-sb-feedback='phone:required')
-                                            | A phone number is required.
+                                            | El número telefónico es obligatorio
                                     
                                     // Message input
                                     .form-floating.mb-3
@@ -91,9 +89,9 @@ html(lang='en')
                                             style='height: 10rem;'
                                             data-sb-validations='required'
                                         )
-                                        label(for='message') Message
+                                        label(for='message') Mensaje
                                         .invalid-feedback(data-sb-feedback='message:required')
-                                            | A message is required.
+                                            | El mensaje es obligatorio.
 
                                     // Submit success message
                                     //
@@ -111,11 +109,11 @@ html(lang='en')
                                     // This is what your users will see when there is
                                     // an error submitting the form
                                     #submitErrorMessage.d-none
-                                        .text-center.text-danger.mb-3 Error sending message!
+                                        .text-center.text-danger.mb-3 Error al enviar el mensaje, intenta nuevamente
 
                                     // Submit Button
                                     .d-grid
-                                        button#submitButton.btn.btn-primary.btn-lg.disabled(type='submit') Submit
+                                        button#submitButton.btn.btn-primary.btn-lg.disabled(type='submit') Enviar
 
                     // Contact cards
                     .row.gx-5.row-cols-2.row-cols-lg-4.py-5
