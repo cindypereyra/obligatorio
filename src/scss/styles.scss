@@ -1,0 +1,11 @@
+// Import Variables
+@import "variables";
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+// Import Global Theme Styles
+@import "global";
+
+//Import Custom CSS
+@import "components/header.scss";
