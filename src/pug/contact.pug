@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content)
         meta(name='author', content)
 
-        title Modern Business - Start Bootstrap Template
+        title CP Motos - Tu comunidad motera
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
@@ -37,22 +37,13 @@ html(lang='en')
                         .row.gx-5.justify-content-center
                             .col-lg-8.col-xl-6
 
-                                // * * * * * * * * * * * * * * *
-                                // * * SB Forms Contact Form * *
-                                // * * * * * * * * * * * * * * *
-
-                                // This form is pre-integrated with SB Forms.
-                                // To make this form functional, sign up at
-                                // https://startbootstrap.com/solution/contact-forms
-                                // to get an API token!
-
                                 form#contactForm(data-sb-form-api-token='API_TOKEN')
 
                                     // Name input
                                     .form-floating.mb-3
                                         input#name.form-control(
                                             type='text',
-                                            placeholder='Enter your name...'
+                                            placeholder='Nombre y Apellido...'
                                             data-sb-validations='required'
                                         )
                                         label(for='name') Nombre y Apellido
@@ -63,7 +54,7 @@ html(lang='en')
                                     .form-floating.mb-3
                                         input#email.form-control(
                                             type='email',
-                                            placeholder='name@example.com'
+                                            placeholder='nombre@ejemplo.com'
                                             data-sb-validations='required,email'
                                         )
                                         label(for='email') Correo electrónico
@@ -74,7 +65,7 @@ html(lang='en')
                                     .form-floating.mb-3
                                         input#phone.form-control(
                                             type='tel',
-                                            placeholder='(123) 456-7890'
+                                            placeholder='(099) 123-456'
                                             data-sb-validations='required'
                                         )
                                         label(for='phone') Número de teléfono
@@ -99,10 +90,7 @@ html(lang='en')
                                     // has successfully submitted
                                     #submitSuccessMessage.d-none
                                         .text-center.mb-3
-                                            .fw-bolder Form submission successful!
-                                            | To activate this form, sign up at
-                                            br
-                                            a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
+                                            .fw-bolder Enviado correctamente!
 
                                     // Submit error message
                                     //
@@ -142,10 +130,3 @@ html(lang='en')
         include includes/footer.pug
 
         include includes/scripts.pug
-
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-        // * *                               SB Forms JS                               * *
-        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')

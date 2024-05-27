@@ -26,16 +26,13 @@ html(lang='en')
             header.bg-dark.py-5.header-background
                 .container.px-5
                     .row.gx-5.align-items-center.justify-content-center
-                        .col-xl-5.col-xxl-6.d-none.d-xl-block.text-center
-                        .col-lg-8.col-xl-7.col-xxl-6
+                        .col-lg-7.col-xl-6.col-xxl-5
                             .my-5.text-center.text-xl-start
                                 h1.display-5.fw-bolder.text-white.mb-2 Bienvenido
-                                p.lead.fw-normal.text-white-50.mb-4 Aquí encontrarás todo lo relacionado con el mundo de las motocicletas
+                                p.lead.fw-normal.text-white.mb-4 Aquí encontrarás todo lo relacionado con el mundo de las motocicletas
                                 .d-grid.gap-3.d-sm-flex.justify-content-sm-center.justify-content-xl-start
                                     a.btn.btn-outline-light.btn-lg.px-4(href='blog-post-1.html') Ruta recomendada
-
-      
-
+                        .col-xl-5.col-xxl-6.d-none.d-xl-block.text-center
 
             // Blog preview section
             section.py-5
@@ -95,6 +92,28 @@ html(lang='en')
                                                 .fw-bold Pedro Hernández
                                                 .text-muted 16 de junio 2023 &middot; 10 minutos
 
+            // Moto destacada del mes
+            section.py-5
+                .container.px-5.my-5
+                    .row.gx-5.justify-content-center
+                        .col-lg-8.col-xl-6
+                            .text-center
+                                h2.fw-bolder Moto destacada del mes
+                                p.lead.fw-normal.text-muted.mb-5 Descubre la moto del mes y sus características.
+                    .row.gx-5.justify-content-center
+                        .col-lg-10
+                            .carousel.slide(data-bs-ride='carousel')
+                                .carousel-inner
+                                    .carousel-item.active
+                                        img.d-block.w-100(src='assets/img/carrousel_pictures/1.webp', alt='Moto destacada 1')
+                                    .carousel-item
+                                        img.d-block.w-100(src='assets/img/carrousel_pictures/2.webp', alt='Moto destacada 2')
+                                    .carousel-item
+                                        img.d-block.w-100(src='assets/img/carrousel_pictures/3.webp', alt='Moto destacada 3')
+                                button.carousel-control-prev(type='button', data-bs-target='.carousel', data-bs-slide='prev')
+                                    span.carousel-control-prev-icon(aria-hidden='true')
+                                button.carousel-control-next(type='button', data-bs-target='.carousel', data-bs-slide='next')
+                                    span.carousel-control-next-icon(aria-hidden='true')
 
 
             // Testimonial section
@@ -110,8 +129,6 @@ html(lang='en')
                                         | Robert Martínez
                                         span.fw-bold.text-primary.mx-1 /
                                         | CEO, Yamaha Uruguay
-
-
 
 
         // Footer
