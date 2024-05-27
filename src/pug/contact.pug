@@ -37,7 +37,8 @@ html(lang='en')
                         .row.gx-5.justify-content-center
                             .col-lg-8.col-xl-6
 
-                                form#contactForm(data-sb-form-api-token='API_TOKEN')
+                                //form#contactForm() netlify
+                                form(id="contactForm" netlify)
 
                                     // Name input
                                     .form-floating.mb-3
@@ -101,7 +102,7 @@ html(lang='en')
 
                                     // Submit Button
                                     .d-grid
-                                        button#submitButton.btn.btn-primary.btn-lg.disabled(type='submit') Enviar
+                                        button#submitButton.btn.btn-primary.btn-lg(type='submit') Enviar
 
                     // Contact cards
                     .row.gx-5.row-cols-2.row-cols-lg-4.py-5
