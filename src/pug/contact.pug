@@ -33,12 +33,11 @@ html(lang='en')
                             .feature.bg-primary.bg-gradient.text-white.rounded-3.mb-3
                                 i.bi.bi-envelope
                             h1.fw-bolder Contáctate con nosotros
-                            p.lead.fw-normal.text-muted.mb-0 *****
+                            p.lead.fw-normal.text-muted.mb-0 Si tienes una consulta, o si quieres que tu marca aparezca en nuestro sitio, contáctanos!
                         .row.gx-5.justify-content-center
                             .col-lg-8.col-xl-6
 
-                                //form#contactForm() netlify
-                                form(id="contactForm" netlify)
+                                form#contactForm(data-sb-form-api-token='API_TOKEN' netlify)
 
                                     // Name input
                                     .form-floating.mb-3
@@ -56,7 +55,7 @@ html(lang='en')
                                         input#email.form-control(
                                             type='email',
                                             placeholder='nombre@ejemplo.com'
-                                            data-sb-validations='required,email'
+                                            data-sb-validations='required'
                                         )
                                         label(for='email') Correo electrónico
                                         .invalid-feedback(data-sb-feedback='email:required')
@@ -102,7 +101,7 @@ html(lang='en')
 
                                     // Submit Button
                                     .d-grid
-                                        button#submitButton.btn.btn-primary.btn-lg(type='submit') Enviar
+                                        button#submitButton.btn.btn-primary.btn-lg(type='post') Enviar
 
                     // Contact cards
                     .row.gx-5.row-cols-2.row-cols-lg-4.py-5
@@ -131,3 +130,5 @@ html(lang='en')
         include includes/footer.pug
 
         include includes/scripts.pug
+
+        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
