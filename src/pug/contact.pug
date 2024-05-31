@@ -43,6 +43,7 @@ html(lang='en')
                                     .form-floating.mb-3
                                         input#name.form-control(
                                             type='text',
+                                            name='name'
                                             placeholder='Nombre y Apellido...'
                                             data-sb-validations='required'
                                         )
@@ -54,6 +55,7 @@ html(lang='en')
                                     .form-floating.mb-3
                                         input#email.form-control(
                                             type='email',
+                                            name='email',
                                             placeholder='nombre@ejemplo.com'
                                             data-sb-validations='required'
                                         )
@@ -65,6 +67,7 @@ html(lang='en')
                                     .form-floating.mb-3
                                         input#phone.form-control(
                                             type='tel',
+                                            name='tel'
                                             placeholder='(099) 123-456'
                                             data-sb-validations='required'
                                         )
@@ -76,6 +79,7 @@ html(lang='en')
                                     .form-floating.mb-3
                                         textarea#message.form-control(
                                             type='text',
+                                            name='message', 
                                             placeholder='Enter your message here...',
                                             style='height: 10rem;'
                                             data-sb-validations='required'
