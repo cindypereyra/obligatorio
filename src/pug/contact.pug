@@ -37,7 +37,7 @@ html(lang='en')
                         .row.gx-5.justify-content-center
                             .col-lg-8.col-xl-6
 
-                                form#contactForm(data-sb-form-api-token='API_TOKEN' netlify)
+                                form#contactForm(netlify)
 
                                     // Name input
                                     .form-floating.mb-3
@@ -130,5 +130,3 @@ html(lang='en')
         include includes/footer.pug
 
         include includes/scripts.pug
-
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
