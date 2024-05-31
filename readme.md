@@ -16,5 +16,5 @@
 
 ### Nuestro modelo de negocio
 
-#### Consiste en vender publicidad a las marcas que quieran aparecer en nuestras sugerncia mensuales, ya sea una marca de Motos o una ciudad o departamento que quiera atraer público de el nicho al que pertenece nuestra página:  personas +25 que les guste el mundo de las motos y sean propietarios de una.
+#### Consiste en vender publicidad a las marcas que quieran aparecer en nuestras sugerencias mensuales, ya sea una marca de Motos o una ciudad o departamento que quiera atraer público de el nicho al que pertenece nuestra página:  personas +25 que les guste el mundo de las motos y sean propietarios de una.
 ![image](https://github.com/cindypereyra/obligatorio/assets/127701685/c1f17847-faba-476c-9d7a-ee8ee996f7ad)
